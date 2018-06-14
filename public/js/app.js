@@ -47675,6 +47675,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -47715,11 +47717,15 @@ var render = function() {
           _c("div", { staticClass: "media-body" }, [
             _c("div", { staticClass: "mt-3" }, [
               _c("a", { attrs: { href: "#" } }, [
-                _vm._v(_vm._s(post.user.name))
-              ])
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(post.body))])
+                _vm._v(
+                  "\n                " +
+                    _vm._s(post.user.name) +
+                    "\n            "
+                )
+              ]),
+              _vm._v(" | " + _vm._s(post.createdDate) + "\n             "),
+              _c("p", [_vm._v(_vm._s(post.body))])
+            ])
           ])
         ])
       })

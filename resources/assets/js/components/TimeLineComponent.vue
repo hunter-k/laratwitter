@@ -7,9 +7,11 @@
             <img class="mr-3" />
             <div class="media-body">
                 <div class="mt-3">
-                    <a href="#">{{ post.user.name }}</a>
+                <a href="#">
+                    {{ post.user.name }}
+                </a> | {{ post.createdDate }}
+                 <p>{{ post.body }}</p>
                 </div>
-                <p>{{ post.body }}</p>
             </div>
         </div>
     </div>
