@@ -18,6 +18,7 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('form-component', require('./components/FormComponent.vue'));
 Vue.component('timeline-component', require('./components/TimelineComponent.vue'));
+Vue.component('alltimeline-component', require('./components/AllTimeLine.vue'));
 
 const app = new Vue({
     el: '#app'
